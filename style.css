@@ -1,0 +1,80 @@
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    background-color: #FFEDD5;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li p{
+    font-family: Arial, sans-serif;
+    color: #2D2C2A;
+    font-size: large;
+}
+
+.pBarrinha {
+    background-color: #fb8553;
+    height: 12px;
+}
+
+.item-rotulo{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+} 
+
+.container {
+    padding: 50px;
+    margin: 30px;
+    width: 350px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-preto {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #2D2C2A;
+}
+
+.txt-laranja {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #995000;
+}
+
+.titulo.sub{
+    color: #635C53;
+}
+
+.menu-nome-preco {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.categoria-nome h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #FED7AA;
+    padding: 5px;
+}
+
+/* 
+#FFEDD5 begie claro
+#995000 coffe
+#2D2C2A black
+*/
