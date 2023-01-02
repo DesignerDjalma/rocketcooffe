@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Item Menu</title>
+</head>
+<style>
+
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+body {
+    margin: 30px;
+    padding: 30px;
+}
+
+.menu-item-card{
+    background-color: rgb(153, 173, 226);
+    border-radius: 20px;
+    width: 200px;
+    /* height: 300px; */
+    padding: 10px;
+    margin: 10px;
+} 
+
+.card-img-itself{
+    height: 200px;
+    border-radius: 10px; 
+}
+
+.card-desc p{
+    font-family: cursive;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.is-success {
+  background-color: #48c78e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.content-display {
+    display: flex;
+}
+
+
+
+</style>
+<body>
+
+    <div class="content-display">
+
+        <div class="menu-item-card">
+            <div class="card-img">
+                <img class="card-img-itself" src="./potato.webp" alt="batata frita">
+            </div>
+            <div class="card-desc">
+                <h4>NOME PRODUTO </h4>
+                <p align="center">Descrição do produtos, com algumas linhas, para dar mais detalhes sobre o mesmo! Saboro e Delicioso!</p>
+            </div>
+            <div class="card-btn">
+                <button class="button is-success">
+                    ADICIONAR+
+                </button>
+            </div>
+        </div>
+    
+        <div class="menu-item-card">
+            <div class="card-img">
+                <img class="card-img-itself" src="./potato.webp" alt="batata frita">
+            </div>
+            <div class="card-desc">
+                <h4>NOME PRODUTO </h4>
+                <p align="center">Descrição do produtos, com algumas linhas, para dar mais detalhes sobre o mesmo! Saboro e Delicioso!</p>
+            </div>
+            <div class="card-btn">
+                <button class="button is-success">
+                    ADICIONAR+
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+<p>Teste</p>
+
+
+</body>
+</html>
