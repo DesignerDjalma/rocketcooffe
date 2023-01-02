@@ -16,7 +16,7 @@ for (const [categoria, listaValores] of Object.entries(menuItems)) {
             <div class="item-box">
                 <div class="item-rotulo">
                     <h3 class="item-nome">
-                        ${listaValores[i]["nome"]}
+                    <input type="checkbox">${listaValores[i]["nome"]}
                     </h3>
                     <H4 class="item-preco">
                         R$ ${listaValores[i]["preco"]}
