@@ -17,6 +17,10 @@ body {
     padding: 30px;
 }
 
+.item{
+    display: inline;
+}
+
 .menu-item-card{
     background-color: rgb(153, 173, 226);
     border-radius: 20px;
@@ -66,19 +70,42 @@ body {
     display: flex;
 }
 
+.categoria-nome {
+    color: #363636;
+    overflow: auto;
+    width: 600px;
+    display: flex;
+}
 
+.categoria-nome-cat{
+    color: #48c78e;
+    display: flex;
+    height: 100%;
+}
+
+.meu-cardapio {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+}
 
 </style>
 <body>
 
-    <div class="content-display">
+    <div class="meu-cardapio" id="populate">
+        <!-- Corpo do Cardápio -->
+    </div>
 
+<!-- 
+    <div class="content-display">
         <div class="menu-item-card">
             <div class="card-img">
                 <img class="card-img-itself" src="./potato.webp" alt="batata frita">
             </div>
             <div class="card-desc">
-                <h4>NOME PRODUTO </h4>
+                <h3>NOME PRODUTO </h3>
+                <h4>PREÇO</h4>
                 <p align="center">Descrição do produtos, com algumas linhas, para dar mais detalhes sobre o mesmo! Saboro e Delicioso!</p>
             </div>
             <div class="card-btn">
@@ -93,7 +120,8 @@ body {
                 <img class="card-img-itself" src="./potato.webp" alt="batata frita">
             </div>
             <div class="card-desc">
-                <h4>NOME PRODUTO </h4>
+                <h3>NOME PRODUTO </h3>
+                <h4>PREÇO</h4>
                 <p align="center">Descrição do produtos, com algumas linhas, para dar mais detalhes sobre o mesmo! Saboro e Delicioso!</p>
             </div>
             <div class="card-btn">
@@ -103,13 +131,15 @@ body {
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     
 
 
 <p>Teste</p>
 
-
+    <!-- Script responsavel por Popular o Cardapio com os items que vem de dentro de um Objeto -->
+    <script src="./populateCardsData.json"></script>
+    <script src="./populateCards.js"></script>
 </body>
 </html>
