@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Indisponivel</title>
+</head>
+<style>
+
+
+
+/* DEFINIÇÕES GERAIS  */
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0px;
+    background-color: rgb(3, 12, 41);
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+/* CONTEÚDO  */
+
+.conteudo-erro503-main {
+    
+    padding: 100px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: rgb(3, 12, 41);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    /* background-color: rgba(0, 60, 255, 0.253); */
+}
+
+.conteudo-item {
+    /* background-color: rgba(238, 130, 238, 0.158); */
+    width: 240px;
+    z-index: 1;
+}
+
+
+
+/* ASTRONAUTA  */
+
+.astronauta {
+    animation: flutuando 12S ease-in-out infinite;
+    height: 300px;
+}
+
+@keyframes flutuando {
+    0%   {transform: rotateZ(-5deg) translateY(2px) translateX(  0px);}
+	25%  {transform: rotateZ( 5deg) translateY(-10px) translateX( -10px);}
+	50%  {transform: rotateZ(-5deg) translateY(-20px) translateX( 10px);}
+	75%  {transform: rotateZ( 5deg) translateY(-10px) translateX( 10px);}
+    100% {transform: rotateZ(-5deg) translateY(2px) translateX( 0px);}
+}
+
+
+
+/* TEXTOS  */
+
+.textos, small{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+.titulo {
+    animation: flutuando-subtitulo 8s ease-in-out infinite;
+    font-size: 100px;
+}
+
+.subtitulo {
+    animation: flutuando-subtitulo 5s ease-in-out infinite;
+    font-size: 20px;
+}
+
+@keyframes flutuando-titulo {
+    0% {transform: rotate(-5deg) translateX(0)}
+	50% {transform: rotate(0deg) translatey(0px);}
+	100% {transform: rotate(-5deg) translatey(0px);}
+}
+
+@keyframes flutuando-subtitulo {
+	0% {transform: translatey(0px);}
+	50% {transform: translatey(-5px);}
+	100% {transform: translatey(0px);}
+}
+
+/* IMAGENS  */
+
+.bg { /* Um ponto fixo no centro da div maior */
+    /* O efeito só consegue ser aplicado dentro da Width da Div pai */
+    /* Por isso é necessário desativar a propriedade para que ela fica em toda
+    a extensão da imagem de fundo */ /* RIP -> width: 400px; */
+    position: fixed;
+}
+
+.img-fundo{
+    /* Com a class .bg fixed, ela ficaria no centro do .conteudo */
+    position: fixed;
+    z-index: -1;
+    height: auto;
+}
+
+.efeito{
+    /* background-color: blue; */
+    width: 792px; /* Dimensões da Imagem de Fundo */
+    height: 360px;
+    box-shadow: inset 0px 0px 50px 50px rgb(3, 12, 41);
+}
+
+
+
+/* NAVEGAÇÃO */
+
+.navMenu{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: crimson;
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+}
+
+
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.rodape-inner {
+    /* background-color: #6e2b2b; */
+    color: #000000;
+    z-index: 1;
+}
+
+
+.rodape-main{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #f6f4e6;
+}
+
+.rodape-inner-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.rodape-inner-inner{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-img {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-img-ref {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    display: inline;
+}
+
+.menu-item-card{
+    background-color: rgb(153, 173, 226);
+    border-radius: 20px;
+    width: 200px;
+    height: 440px;
+    padding: 10px;
+    margin: 10px;
+} 
+
+.card-img-titulo {
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+}
+
+.card-img-itself{
+    height: 200px;
+    border-radius: 10px; 
+}
+
+.card-desc {
+    /* background-color: #48c78e; */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+}
+
+.card-preco {
+    height: 0px;
+    font-family: cursive;
+    font-size: 20px;
+    position: relative;
+    top: -60px;
+    left: -10px;
+    text-align: right
+}
+
+.card-desc p{
+    font-family: cursive;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.is-success {
+  background-color: #48c78e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.content-display {
+    display: flex;
+}
+
+.categoria-nome {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categoria-nome-cat{
+    color: #aeebcf;
+    display: flex;
+    height: 100%;
+}
+
+.meu-cardapio {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+}
+
+
+</style>
+
+
+<body>
+    
+    <nav class="navMenu">
+        <a class="nav-img-ref" href="./index2.html">
+            <img class="nav-img" src="./planet-earth.png" alt="planeta terra">
+        </a>
+        <a href="">LOJA</a>
+        <a href="#">sobre</a>
+        <a href="#">contato</a>
+        
+        
+    </nav>
+    
+    
+    <!-- ERRO 503 CONTEÚDO -->
+    <div class="conteudo-erro503-main">
+        <div class="meu-cardapio" id="populate">
+            <!-- Corpo do Cardápio -->
+        </div>
+    </div>
+    <!-- ERRO 503 CONTEÚDO FIM-->
+
+    
+
+    <footer class="rodape-main">
+        <div class="rodape-inner">
+            <div class="rodape-inner-inner">
+                <a href=""><img style="height: 25px;" src="https://img.shields.io/badge/instagram-3Djhey-blue?style=for-the-badge&logo=instagram" alt="instagram"></a>
+                <a href=""><img style="height: 25px;" src="https://img.shields.io/badge/twitter-3Djhey-blue?style=for-the-badge&logo=twitter" alt="twitter"></a>
+                <a href=""><img style="height: 25px;" src="https://img.shields.io/badge/facebook-Djalma-blue?style=for-the-badge&logo=facebook" alt="facebook"></a>
+            </div>
+            <div style="text-align: center; padding: 20px; color: white;">
+                <small>Copyright &copy; Djalma Filho</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Script responsavel por Popular o Cardapio com os items que vem de dentro de um Objeto -->
+    <script src="./populateCardsData.json"></script>
+    <script src="./populateCards.js"></script>
+</body>
+</html>

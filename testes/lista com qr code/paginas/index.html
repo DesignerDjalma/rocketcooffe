@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Indisponivel</title>
+</head>
+<style>
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(3, 12, 41);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.c503 {
+    font-size: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+
+.c503sub{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: -20px;
+    color: white;
+}
+
+.conteudo {
+    gap: 10px;
+    padding: 10px;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-indisponivel{
+    /* background-color: violet; */
+    width: 300px;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-astronauta {
+    background-color: transparent;
+    height: 300px;
+}
+
+.erro {
+    display: block;
+    justify-content: center;
+    justify-items: center;
+}
+.inner {
+    /* background-color: chocolate; */
+    color: #000;
+}
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner h1, h2{
+    text-align: center;
+}
+.fundo {
+    position: fixed;
+    height: 400px;
+    /* width: 400px; */
+    /* background-color: rgb(255, 255, 255); */
+    /* agora que ele ta no centro, basta alinha seu filho
+    Que é a Imagem de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.fundo-img{
+    /* Com a imagem fixed ela ficaria como se fosse colada
+    direto no body, começando na ponta superior esquerda
+    até o seu tamanho, mas como a div pai 
+    tem display:  flex e justify e aligm, ela fica no meio; */
+    
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: -2;
+}
+.efeito{
+    /* background-color: blue; */
+    width: 792px;
+    height: 360px;
+    z-index: 3;
+    box-shadow: inset 0px 0px 50px 50px rgb(3, 12, 41);
+
+}
+
+</style>
+<body>
+    
+    
+
+    <div class="conteudo">
+        <div class="fundo">
+            <img class="fundo-img" src="./space.jpg" alt="">
+            <div class="efeito"></div>
+        </div>
+        <div class="card-indisponivel">
+            <img class="img-astronauta" src="./astronauta.png" alt="">
+        </div>
+        <div class="card-indisponivel">
+            <div class="erro">
+                <div class="inner">
+                    <h1 class="c503">503</h1>
+                    <h2 class="c503sub">Página Temporariamente Indisponivel</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
