@@ -16,12 +16,13 @@ for (const [categoria, listaValores] of Object.entries(menuItems)) {
         categoriaUl.innerHTML +=  `
         <li class="item">
             <div class="content-display">
-                <div class="menu-item-card">
-                    <div class="card-img">
-                        <h3 class="card-img-titulo">${listaValores[i]["nome"]}</h3>
-                        <img class="card-img-itself" src="./potato.webp" alt="batata frita">
-                    </div>
-                    <div class="card-desc">
+            <div class="menu-item-card">
+            <img src="./card.png" alt="" class="menu-item-card-img">
+            <div class="card-img">
+            <h3 class="card-img-titulo">${listaValores[i]["nome"]}</h3>
+            </div>
+            <div class="card-desc">
+                <img class="card-img-itself" src="./burger.png" alt="batata frita">
                         
                         <h4 class="card-preco">R$ ${listaValores[i]["preco"]}</h4>
                         <p align="center">${listaValores[i]["descricao"]}</p>
@@ -36,5 +37,5 @@ for (const [categoria, listaValores] of Object.entries(menuItems)) {
         `
     }
 } 
-
+ 
 

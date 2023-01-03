@@ -50,7 +50,7 @@ body {
 .conteudo-item {
     /* background-color: rgba(238, 130, 238, 0.158); */
     width: 240px;
-    z-index: 1;
+    z-index: -1;
 }
 
 
@@ -208,12 +208,18 @@ body {
 }
 
 .menu-item-card{
-    background-color: rgb(153, 173, 226);
+    /* background-color: rgb(153, 173, 226); */
     border-radius: 20px;
     width: 200px;
     height: 440px;
     padding: 10px;
     margin: 10px;
+} 
+.menu-item-card-img{
+    /* background-color: rgb(153, 173, 226); */
+    height: 300px;
+    position: absolute;
+    
 } 
 
 .card-img-titulo {
@@ -223,8 +229,10 @@ body {
 }
 
 .card-img-itself{
-    height: 200px;
+    background-color: #fddb3a;
+    height: 120px;
     border-radius: 10px; 
+    z-index: -1;
 }
 
 .card-desc {
@@ -305,6 +313,8 @@ body {
 
 <body>
     
+<!-- <img src="./card.png" alt="" class="menu-item-card-img"> -->
+
     <nav class="navMenu">
         <a class="nav-img-ref" href="./index2.html">
             <img class="nav-img" src="./planet-earth.png" alt="planeta terra">
